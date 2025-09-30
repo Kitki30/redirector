@@ -21,12 +21,7 @@ urls = {
     "converter": "https://convert.kitki30.tk/"
 }
 
-@app.route('/<code>')
-def short_redirect(code):
-    target = urls.get(code)
-    if target:
-        return redirect(target)
-    
+def redirect_404():
     # 404 page
     path = os.path.join(BASE_DIR, "pages", "err_invalid.html")
     if not os.path.isfile(path):
@@ -35,6 +30,22 @@ def short_redirect(code):
     response = make_response(send_file(path))
     response.status_code = 404
     return response
+
+@app.route('/<code>')
+def short_redirect(code):
+    target = urls.get(code)
+    if target:
+        return redirect(target)
+    
+    return redirect_404()
+
+@app.route('/view/<code>')
+def view_url(code):
+    target = urls.get(code)
+    if target:
+        return target, 200
+    
+    return redirect_404()
 
 @app.route('/')
 def main():
