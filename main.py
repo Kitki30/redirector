@@ -9,8 +9,8 @@ BASE_DIR = os.path.dirname(__file__)
 urls = {
     "github": "https://github.com/kitki30",
     "stick": "https://github.com/stickfirmware",
-    "stick_repo": "https://github.com/stickfirmware/stick/",
-    "device_table": "https://github.com/stickfirmware/stick-tutorials/blob/main/install/table.md",
+    "stickrepo": "https://github.com/stickfirmware/stick/",
+    "devicetable": "https://github.com/stickfirmware/stick-tutorials/blob/main/install/table.md",
     "tutorials": "https://www.youtube.com/playlist?list=PLTu2NSjIK0c7TVbUVAlP5KkjpFISeaogt",
     "esptool": "https://espressif.github.io/esptool-js/",
     "mpydownloads": "https://micropython.org/download/",
