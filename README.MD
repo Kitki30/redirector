@@ -3,6 +3,7 @@ Kitki30's redirect server
 
 
 ## Endpoints
+Hosted by default on ``127.0.0.1:1201``
 
 ### ``/``
 Redirects to https://www.kitki30.tk/
