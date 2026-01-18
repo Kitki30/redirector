@@ -36,7 +36,7 @@ def short_redirect(code):
     target = urls.get(code)
     if target:
         return redirect(target)
-    
+
     return redirect_404()
 
 @app.route('/view/<code>')
@@ -44,7 +44,7 @@ def view_url(code):
     target = urls.get(code)
     if target:
         return target, 200
-    
+
     return redirect_404()
 
 @app.route('/')
@@ -52,4 +52,4 @@ def main():
     return redirect("https://www.kitki30.tk/")
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=6767)
+    app.run(host="127.0.0.1", port=1201)
