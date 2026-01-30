@@ -9,7 +9,7 @@ BASE_DIR = os.path.dirname(__file__)
 
 def redirect_404():
     # 404 page
-    path = os.path.join(BASE_DIR, config.pages_directory, config.404_page)
+    path = os.path.join(BASE_DIR, config.pages_directory, config.error_page)
     if not os.path.isfile(path) or not config.allow_404:
         return "404 Not Found", 404
 

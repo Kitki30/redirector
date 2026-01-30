@@ -22,4 +22,4 @@ host_port = "1201"
 # -- Pages --
 pages_directory = "pages" # This is only the name of the folder, app will use BASE_DIR + pages_directory, BASE_DIR is app root dir
 allow_404 = True
-404_page = "err_invalid.html" # Name of the file in your pages directory, app will use BASE_DIR + pages_directory + 404_page
+error_page = "err_invalid.html" # Name of the file in your pages directory, app will use BASE_DIR + pages_directory + 404_page
